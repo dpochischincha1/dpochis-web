@@ -7,11 +7,11 @@ public_folder: "/uploads"
 
 collections:
     - name: "menu"
-    label: "Menú D'Pochis"
+    label: "Menu D'Pochis"
     folder: "content/menu"
     create: true
     fields:
             - {label: "Nombre", name: "title", widget: "string"}
             - {label: "Precio", name: "precio", widget: "number"}
-            - {label: "Descripción", name: "body", widget: "text"}
+            - {label: "Descripcion", name: "body", widget: "text"}
             - {label: "Imagen", name: "image", widget: "image"}
