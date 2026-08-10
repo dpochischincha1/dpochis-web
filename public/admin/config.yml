@@ -2,19 +2,16 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "public/images"
-public_folder: "/images"
+media_folder: "public/uploads"
+public_folder: "/uploads"
 
 collections:
-    - name: "productos"
-    label: "Productos"
-    folder: "content/productos"
+    - name: "menu"
+    label: "Menú D'Pochis"
+    folder: "content/menu"
     create: true
-    slug: "{{slug}}"
     fields:
-            - {label: "Título", name: "title", widget: "string"}
+            - {label: "Nombre", name: "title", widget: "string"}
             - {label: "Precio", name: "precio", widget: "number"}
-            - {label: "Descripción", name: "descripcion", widget: "text"}
-            - {label: "Imagen", name: "imagen", widget: "image"}
-            - {label: "Categoría", name: "categoria", widget: "select", options: ["Hamburguesas", "Salchipapas", "Bebidas", "Combos"]}
-            - {label: "Publicado", name: "draft", widget: "boolean", default: false}
+            - {label: "Descripción", name: "body", widget: "text"}
+            - {label: "Imagen", name: "image", widget: "image"}
