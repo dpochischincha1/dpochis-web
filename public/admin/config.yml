@@ -15,3 +15,4 @@ collections:
             - {label: "Precio", name: "precio", widget: "number"}
             - {label: "Descripcion", name: "body", widget: "text"}
             - {label: "Imagen", name: "image", widget: "image"}
+
