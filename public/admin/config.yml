@@ -1,10 +1,8 @@
 backend:
   name: git-gateway
   branch: main
-
 media_folder: "public/uploads"
 public_folder: "/uploads"
-
 collections:
     - name: "menu"
     label: "Menu D'Pochis"
@@ -15,4 +13,3 @@ collections:
             - {label: "Precio", name: "precio", widget: "number"}
             - {label: "Descripcion", name: "body", widget: "text"}
             - {label: "Imagen", name: "image", widget: "image"}
-
